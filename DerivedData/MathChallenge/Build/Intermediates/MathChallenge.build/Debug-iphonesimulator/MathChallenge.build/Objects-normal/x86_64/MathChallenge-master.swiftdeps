@@ -1,0 +1,13 @@
+version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
+options: "ff17cc04ed3a9dddbb407100943fd829"
+build_time: [534178160, 609985000]
+inputs:
+  "/Users/matthewashley/Documents/Xcode/MathChallenge/MathChallenge/SecondViewController.swift": [534176120, 0]
+  "/Users/matthewashley/Documents/Xcode/MathChallenge/MathChallenge/TableViewCell.swift": [530477582, 0]
+  "/Users/matthewashley/Documents/Xcode/MathChallenge/MathChallenge/2SwiftData.swift": [530512192, 0]
+  "/Users/matthewashley/Documents/Xcode/MathChallenge/MathChallenge/FirstViewController.swift": [533899628, 0]
+  "/Users/matthewashley/Documents/Xcode/MathChallenge/MathChallenge/ThirdViewController.swift": [530477582, 0]
+  "/Users/matthewashley/Documents/Xcode/MathChallenge/MathChallenge/AppDelegate.swift": [533896813, 0]
+  "/Users/matthewashley/Documents/Xcode/MathChallenge/MathChallenge/HighScore.swift": [533888736, 0]
+  "/Users/matthewashley/Documents/Xcode/MathChallenge/MathChallenge/LocalDatabaseControl.swift": [534178159, 0]
+  "/Users/matthewashley/Documents/Xcode/MathChallenge/MathChallenge/FinalHighScore.swift": [533888836, 0]
