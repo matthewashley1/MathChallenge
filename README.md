@@ -14,9 +14,9 @@ MathChallenge isn’t fully completed, for features will be added in the near fu
 ### Screenshot
 
 <p align=“center”>
-	<img src=“” alt=“Screenshot”/>
+	<img src=“https://github.com/matthewashley1/MathChallenge/blob/master/Screen%20Shot%202016-12-06%20at%204.26.22%20AM.png” alt=“Screenshot”/>
 </p>
 
 <p align=“center”>
-	<img src=“” alt=“Screenshot”/>
+	<img src=“https://github.com/matthewashley1/MathChallenge/blob/master/Screen%20Shot%202016-12-06%20at%204.27.03%20AM.png” alt=“Screenshot”/>
 </p> 
