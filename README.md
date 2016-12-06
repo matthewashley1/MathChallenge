@@ -13,10 +13,13 @@ MathChallenge isn’t fully completed, for features will be added in the near fu
 
 ### Screenshot
 
-<p align=“center”>
-	<img src=“https://github.com/matthewashley1/MathChallenge/blob/master/Screen%20Shot%202016-12-06%20at%204.26.22%20AM.png” alt=“Screenshot”/>
+
+<p align="center">
+<img width="467" alt="screen shot 2016-12-06 at 4 26 22 am" src="https://cloud.githubusercontent.com/assets/13858015/20920829/7b8d778a-bb6f-11e6-9e28-01345c38839b.png">
 </p>
 
-<p align=“center”>
-	<img src=“https://github.com/matthewashley1/MathChallenge/blob/master/Screen%20Shot%202016-12-06%20at%204.27.03%20AM.png” alt=“Screenshot”/>
-</p> 
+<p align="center">
+<img width="468" alt="screen shot 2016-12-06 at 4 27 03 am" src="https://cloud.githubusercontent.com/assets/13858015/20920831/808bb828-bb6f-11e6-9bc9-4aea3f829195.png">
+</p>
+
+
