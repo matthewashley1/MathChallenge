@@ -11,12 +11,4 @@ MathChallenge isn’t fully completed features will be added in the near future.
 -Integrate cloud database to share app information across devices
 -Adding different challenge modes
 
-### Screenshot
-
-<p align=“center”>
-	<img src=“https://github.com/matthewashley1/MathChallenge/blob/master/Screen%20Shot%202016-12-06%20at%204.26.22%20AM.png” alt=“Screenshot”/>
-</p>
-
-<p align=“center”>
-	<img src=“https://github.com/matthewashley1/MathChallenge/blob/master/Screen%20Shot%202016-12-06%20at%204.27.03%20AM.png” alt=“Screenshot”/>
-</p> 
+![Demo](http://sotd.us/matthewashley/Math_Challenge.gif)
