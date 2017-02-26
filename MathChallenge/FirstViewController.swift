@@ -10,11 +10,10 @@ import UIKit
 import CloudKit
 
 class FirstViewController: UIViewController, UIApplicationDelegate {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        LocDbc.cleanDatabaseTables()
         LocDbc.databaseSetup()
         LocDbc.pullQuestionsFromDatabase()
         LocDbc.setHighScores()
@@ -26,5 +25,13 @@ class FirstViewController: UIViewController, UIApplicationDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func higeScorebtn(_ sender: Any) {
+        
+        LocDbc.pageTransfer = "First"
+        
+        let vc: AnyObject! = self.storyboard?.instantiateViewController(withIdentifier: "High Score")
+        self.show(vc as! UIViewController, sender: vc)
+        
+    }
 }
 

@@ -6,19 +6,19 @@ provides-nominal:
 provides-member:
 - ["C13MathChallenge9HighScore", ""]
 provides-dynamic-lookup:
+- "viewDidLoad"
 - "highestScore"
 - "viewWillAppear"
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
 depends-top-level:
-- "Bool"
+- "UILabel"
 - !private "=="
 - "AssignmentPrecedence"
-- "HighScore"
 - "UIViewController"
-- "UILabel"
-- !private "StringLiteralType"
 - !private "LocDbc"
+- !private "StringLiteralType"
+- "HighScore"
+- "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "LocDbc"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]

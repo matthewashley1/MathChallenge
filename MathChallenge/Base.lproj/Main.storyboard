@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -15,7 +15,7 @@
         <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="MathChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Start" id="BYZ-38-t0r" customClass="FirstViewController" customModule="MathChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -53,7 +53,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1Dv-Zc-y1F" kind="show" id="tUY-Kq-klk"/>
+                                    <action selector="higeScorebtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="22H-bQ-HnL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -71,68 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-97" y="322"/>
-        </scene>
-        <!--High Score-->
-        <scene sceneID="oPZ-mW-gDm">
-            <objects>
-                <viewController id="1Dv-Zc-y1F" customClass="HighScore" customModule="MathChallenge" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Gip-wK-LAG"/>
-                        <viewControllerLayoutGuide type="bottom" id="7k4-DB-7kg"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5U4-LJ-nWl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highest Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbl-nO-wcb">
-                                <rect key="frame" x="20" y="152" width="374" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="wKW-LF-49I"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qX2-E6-17B">
-                                <rect key="frame" x="20" y="281" width="374" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="3SM-7x-F2I"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jun-0b-ejE">
-                                <rect key="frame" x="360" y="28" width="34" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="nKi-9R-um1"/>
-                                </constraints>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="66b-rB-DxF"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="hbl-nO-wcb" firstAttribute="leading" secondItem="5U4-LJ-nWl" secondAttribute="leadingMargin" id="175-LI-cEG"/>
-                            <constraint firstItem="Jun-0b-ejE" firstAttribute="trailing" secondItem="hbl-nO-wcb" secondAttribute="trailing" id="1y6-ad-EHs"/>
-                            <constraint firstItem="qX2-E6-17B" firstAttribute="top" secondItem="hbl-nO-wcb" secondAttribute="bottom" constant="87" id="4v9-Mb-76F"/>
-                            <constraint firstItem="7k4-DB-7kg" firstAttribute="top" secondItem="qX2-E6-17B" secondAttribute="bottom" constant="404" id="703-Wr-BSD"/>
-                            <constraint firstItem="hbl-nO-wcb" firstAttribute="top" secondItem="Jun-0b-ejE" secondAttribute="bottom" constant="94" id="Qk6-Lh-cc2"/>
-                            <constraint firstItem="Jun-0b-ejE" firstAttribute="trailing" secondItem="5U4-LJ-nWl" secondAttribute="trailingMargin" id="V3x-3h-bkW"/>
-                            <constraint firstItem="Jun-0b-ejE" firstAttribute="top" secondItem="Gip-wK-LAG" secondAttribute="bottom" constant="8" symbolic="YES" id="c2Y-00-buA"/>
-                            <constraint firstItem="hbl-nO-wcb" firstAttribute="centerX" secondItem="qX2-E6-17B" secondAttribute="centerX" id="iD8-Jh-Erg"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="highestScore" destination="qX2-E6-17B" id="Cex-v7-tFP"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fi8-te-ABp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="730.43478260869574" y="-60.326086956521742"/>
+            <point key="canvasLocation" x="-94" y="218"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="LfR-of-gY4">
@@ -402,7 +341,7 @@
                                 <rect key="frame" x="298" y="480" width="32" height="30"/>
                                 <state key="normal" title="High"/>
                                 <connections>
-                                    <segue destination="tDz-Gj-9Au" kind="show" id="ngE-90-xYP"/>
+                                    <action selector="highScorebtn:" destination="Z3E-FP-fol" eventType="touchUpInside" id="vCT-DO-dON"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nP5-o6-2VJ">
@@ -439,7 +378,7 @@
         <!--Final High Score-->
         <scene sceneID="POb-U1-CIh">
             <objects>
-                <viewController id="tDz-Gj-9Au" customClass="FinalHighScore" customModule="MathChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="High Score" id="tDz-Gj-9Au" customClass="FinalHighScore" customModule="MathChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LO8-3n-iHf"/>
                         <viewControllerLayoutGuide type="bottom" id="HO2-Yv-siy"/>
@@ -455,7 +394,7 @@
                                 </constraints>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="Z3E-FP-fol" kind="show" id="TJs-CU-TG8"/>
+                                    <action selector="exitHighbtn:" destination="tDz-Gj-9Au" eventType="touchUpInside" id="q4p-vn-OhD"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3k-Y7-ceV">
@@ -495,7 +434,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bzm-wj-vgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1498.5507246376812" y="-60.326086956521742"/>
+            <point key="canvasLocation" x="1499" y="227"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

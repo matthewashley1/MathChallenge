@@ -146,6 +146,7 @@ SWIFT_CLASS("_TtC13MathChallenge14FinalHighScore")
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)viewWillAppear:(BOOL)animated;
+- (IBAction)exitHighbtn:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -155,17 +156,7 @@ SWIFT_CLASS("_TtC13MathChallenge19FirstViewController")
 @interface FirstViewController : UIViewController <UIApplicationDelegate>
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC13MathChallenge9HighScore")
-@interface HighScore : UIViewController
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified highestScore;
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
-- (void)viewWillAppear:(BOOL)animated;
+- (IBAction)higeScorebtn:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -174,6 +165,7 @@ SWIFT_CLASS("_TtC13MathChallenge9HighScore")
 SWIFT_CLASS("_TtC13MathChallenge20LocalDatabaseControl")
 @interface LocalDatabaseControl : NSObject
 @property (nonatomic, copy) NSString * _Nonnull overallScore;
+@property (nonatomic, copy) NSString * _Nonnull pageTransfer;
 @property (nonatomic) NSInteger tracking;
 - (void)databaseSetup;
 - (void)pullQuestionsFromDatabase;
@@ -238,6 +230,7 @@ SWIFT_CLASS("_TtC13MathChallenge19ThirdViewController")
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)viewDidAppear:(BOOL)animated;
+- (IBAction)highScorebtn:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

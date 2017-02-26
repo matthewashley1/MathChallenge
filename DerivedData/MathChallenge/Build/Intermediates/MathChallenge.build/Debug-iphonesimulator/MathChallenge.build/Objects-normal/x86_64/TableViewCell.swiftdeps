@@ -10,10 +10,10 @@ provides-dynamic-lookup:
 - "awakeFromNib"
 - "setSelected"
 depends-top-level:
-- "UILabel"
-- "Bool"
 - "UITableViewCell"
+- "UILabel"
 - "TableViewCell"
+- "Bool"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - ["Ps9AnyObject", "finalScore"]

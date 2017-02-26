@@ -102,7 +102,8 @@ class LocalDatabaseControl: NSObject {
     var question10 = [questions10]() //Stores the questions and answers for Level 10
     var highScore = [highScores]() //Stores the highest score achieved in the game
     
-    var overallScore: String = ""
+    var overallScore: String = "" //Stores the score of the last game played
+    var pageTransfer: String = "" //Stores which page was used to view the high score page
     
     var tracking: Int = 0
     
@@ -706,7 +707,6 @@ class LocalDatabaseControl: NSObject {
         
     }
     
-    
     //Returns the final score of the pervious game!
     func returnFinalScore () -> String {
         
@@ -794,17 +794,14 @@ class LocalDatabaseControl: NSObject {
                 mathDB?.close()
             }
             
-        }
-        
-        else {
+        } else {
             
             highScore.append(highScores(score: gameScore))
             
         }
-        
     }
     
-    
+
     
     
 } //Closing bracket for class
@@ -819,9 +816,9 @@ class LocalDatabaseControl: NSObject {
 
 
 
-/**THIS IS A AREA FOR UN-FINISHED AND UN-INTEGRATED FEATURES!!!!*/
+/** THIS IS A AREA FOR UN-FINISHED AND UN-INTEGRATED FEATURES!!!!*/
 
-/**Will sort high scores in Array highScore in ascending order. May use later*/
+/** Will sort high scores in Array highScore in ascending order. May use later*/
 
 /*highScore.append(highScores(score: gameScore))
  let arrayCount: Int = (highScore.count - 1)

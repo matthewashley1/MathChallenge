@@ -18,7 +18,6 @@
 		69BA816D1D93830D00BA6829 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BA816B1D93830D00BA6829 /* TableViewCell.swift */; };
 		69BA816E1D93830D00BA6829 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69BA816C1D93830D00BA6829 /* TableViewCell.xib */; };
 		69BA81701D93BA6200BA6829 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BA816F1D93BA6200BA6829 /* SecondViewController.swift */; };
-		69BA81721D93BAA500BA6829 /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BA81711D93BAA500BA6829 /* HighScore.swift */; };
 		69C5F33C1D94B0880009CE52 /* FinalHighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5F33B1D94B0880009CE52 /* FinalHighScore.swift */; };
 		69C5F33E1D94B0950009CE52 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5F33D1D94B0950009CE52 /* ThirdViewController.swift */; };
 		69C5F3401D94B1560009CE52 /* LocalDatabaseControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C5F33F1D94B1560009CE52 /* LocalDatabaseControl.swift */; };
@@ -67,7 +66,6 @@
 		69BA816B1D93830D00BA6829 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		69BA816C1D93830D00BA6829 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		69BA816F1D93BA6200BA6829 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		69BA81711D93BAA500BA6829 /* HighScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScore.swift; sourceTree = "<group>"; };
 		69C5F33B1D94B0880009CE52 /* FinalHighScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalHighScore.swift; sourceTree = "<group>"; };
 		69C5F33D1D94B0950009CE52 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		69C5F33F1D94B1560009CE52 /* LocalDatabaseControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDatabaseControl.swift; sourceTree = "<group>"; };
@@ -157,7 +155,6 @@
 				69BA813F1D93818700BA6829 /* FirstViewController.swift */,
 				69BA816F1D93BA6200BA6829 /* SecondViewController.swift */,
 				69C5F33D1D94B0950009CE52 /* ThirdViewController.swift */,
-				69BA81711D93BAA500BA6829 /* HighScore.swift */,
 				69C5F33B1D94B0880009CE52 /* FinalHighScore.swift */,
 				69C5F33F1D94B1560009CE52 /* LocalDatabaseControl.swift */,
 				69BA816B1D93830D00BA6829 /* TableViewCell.swift */,
@@ -334,7 +331,6 @@
 				69C5F33E1D94B0950009CE52 /* ThirdViewController.swift in Sources */,
 				69BA813E1D93818700BA6829 /* AppDelegate.swift in Sources */,
 				69C5F3F11D94B8170009CE52 /* FMDatabaseAdditions.m in Sources */,
-				69BA81721D93BAA500BA6829 /* HighScore.swift in Sources */,
 				69C5F3EF1D94B8170009CE52 /* FMResultSet.m in Sources */,
 				69C5F3F21D94B8170009CE52 /* FMDatabasePool.m in Sources */,
 				69C5F3401D94B1560009CE52 /* LocalDatabaseControl.swift in Sources */,

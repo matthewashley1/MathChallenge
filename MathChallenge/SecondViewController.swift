@@ -116,7 +116,7 @@ class SecondViewController: UIViewController {
         
         if (answerLabel.text == questionAnswer) {
             
-            count = (count + 3)
+            count = (count + 4)
             
             scoreLabel.text = String(Int(scoreLabel.text!)! + 5)
             
@@ -129,7 +129,6 @@ class SecondViewController: UIViewController {
             questionAnswer = LocDbc.getRandomAnswer(randomNumber, correct: questionsCorrect)
             
         }
-        
     }
     
     //Displays the timer value!
@@ -149,9 +148,7 @@ class SecondViewController: UIViewController {
                 counting = 1
             }
             
-        }
-        
-        else {
+        } else {
         
             count = (count - 1)
             timeLabel.text = "\(count)"

@@ -26,8 +26,32 @@ class FinalHighScore: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        highestScore.text = LocDbc.highScore[0].score
-
+        if (LocDbc.highScore.count == 0) {
+            
+            highestScore.text = "Play a Game"
+            
+        } else {
+            
+            highestScore.text = LocDbc.highScore[0].score
+            
+        }
     }
     
+    @IBAction func exitHighbtn(_ sender: Any) {
+        
+        if (LocDbc.pageTransfer == "First") {
+            
+            let vc: AnyObject! = self.storyboard?.instantiateViewController(withIdentifier: "Start")
+            self.show(vc as! UIViewController, sender: vc)
+            
+        }
+        
+        if (LocDbc.pageTransfer == "Last") {
+            
+            let vc: AnyObject! = self.storyboard?.instantiateViewController(withIdentifier: "FinalScore")
+            self.show(vc as! UIViewController, sender: vc)
+            
+        }
+        
+    }
 }

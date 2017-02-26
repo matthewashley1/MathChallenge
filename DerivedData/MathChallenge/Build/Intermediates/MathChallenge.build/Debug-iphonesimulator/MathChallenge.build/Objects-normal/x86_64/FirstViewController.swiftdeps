@@ -8,11 +8,16 @@ provides-member:
 provides-dynamic-lookup:
 - "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "higeScorebtn"
 depends-top-level:
+- "CastingPrecedence"
+- "AssignmentPrecedence"
 - "UIApplicationDelegate"
-- "UIViewController"
+- !private "AnyObject"
 - "FirstViewController"
 - !private "LocDbc"
+- "UIViewController"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "LocDbc"]
 - ["Ps9AnyObject", "application"]
@@ -27,15 +32,21 @@ depends-member:
 - ["Ps9AnyObject", "applicationWillEnterForeground"]
 - ["Ps9AnyObject", "applicationWillResignActive"]
 - ["Ps9AnyObject", "applicationWillTerminate"]
-- !private ["Ps9AnyObject", "cleanDatabaseTables"]
 - !private ["Ps9AnyObject", "databaseSetup"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- ["Ps9AnyObject", "higeScorebtn"]
 - !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "instantiateViewController"]
+- !private ["Ps9AnyObject", "pageTransfer"]
 - !private ["Ps9AnyObject", "pullQuestionsFromDatabase"]
 - !private ["Ps9AnyObject", "setHighScores"]
+- !private ["Ps9AnyObject", "show"]
+- !private ["Ps9AnyObject", "storyboard"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
+- !private ["PSo13CKRecordValue", "init"]
+- !private ["PSo15CNKeyDescriptor", "init"]
 - !private ["Ps7CVarArg", "LocDbc"]
 - ["Ps7CVarArg", "application"]
 - ["Ps7CVarArg", "applicationDidBecomeActive"]
@@ -49,15 +60,20 @@ depends-member:
 - ["Ps7CVarArg", "applicationWillEnterForeground"]
 - ["Ps7CVarArg", "applicationWillResignActive"]
 - ["Ps7CVarArg", "applicationWillTerminate"]
-- !private ["Ps7CVarArg", "cleanDatabaseTables"]
 - !private ["Ps7CVarArg", "databaseSetup"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- ["Ps7CVarArg", "higeScorebtn"]
 - !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "instantiateViewController"]
+- !private ["Ps7CVarArg", "pageTransfer"]
 - !private ["Ps7CVarArg", "pullQuestionsFromDatabase"]
 - !private ["Ps7CVarArg", "setHighScores"]
+- !private ["Ps7CVarArg", "show"]
+- !private ["Ps7CVarArg", "storyboard"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", "window"]
 - ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "LocDbc"]
 - ["Ps28CustomDebugStringConvertible", "application"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
@@ -71,15 +87,21 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "applicationWillEnterForeground"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
-- !private ["Ps28CustomDebugStringConvertible", "cleanDatabaseTables"]
 - !private ["Ps28CustomDebugStringConvertible", "databaseSetup"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "higeScorebtn"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "pageTransfer"]
 - !private ["Ps28CustomDebugStringConvertible", "pullQuestionsFromDatabase"]
 - !private ["Ps28CustomDebugStringConvertible", "setHighScores"]
+- !private ["Ps28CustomDebugStringConvertible", "show"]
+- !private ["Ps28CustomDebugStringConvertible", "storyboard"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps23CustomStringConvertible", "LocDbc"]
 - ["Ps23CustomStringConvertible", "application"]
 - ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
@@ -93,12 +115,16 @@ depends-member:
 - ["Ps23CustomStringConvertible", "applicationWillEnterForeground"]
 - ["Ps23CustomStringConvertible", "applicationWillResignActive"]
 - ["Ps23CustomStringConvertible", "applicationWillTerminate"]
-- !private ["Ps23CustomStringConvertible", "cleanDatabaseTables"]
 - !private ["Ps23CustomStringConvertible", "databaseSetup"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "higeScorebtn"]
 - !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "instantiateViewController"]
+- !private ["Ps23CustomStringConvertible", "pageTransfer"]
 - !private ["Ps23CustomStringConvertible", "pullQuestionsFromDatabase"]
 - !private ["Ps23CustomStringConvertible", "setHighScores"]
+- !private ["Ps23CustomStringConvertible", "show"]
+- !private ["Ps23CustomStringConvertible", "storyboard"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
@@ -115,16 +141,26 @@ depends-member:
 - ["Ps9Equatable", "applicationWillEnterForeground"]
 - ["Ps9Equatable", "applicationWillResignActive"]
 - ["Ps9Equatable", "applicationWillTerminate"]
-- !private ["Ps9Equatable", "cleanDatabaseTables"]
 - !private ["Ps9Equatable", "databaseSetup"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
+- ["Ps9Equatable", "higeScorebtn"]
 - !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "instantiateViewController"]
+- !private ["Ps9Equatable", "pageTransfer"]
 - !private ["Ps9Equatable", "pullQuestionsFromDatabase"]
 - !private ["Ps9Equatable", "setHighScores"]
+- !private ["Ps9Equatable", "show"]
+- !private ["Ps9Equatable", "storyboard"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["C13MathChallenge19FirstViewController", "AnyObject"]
 - !private ["C13MathChallenge19FirstViewController", "LocDbc"]
+- !private ["C13MathChallenge19FirstViewController", "UIViewController"]
 - ["C13MathChallenge19FirstViewController", "application"]
 - ["C13MathChallenge19FirstViewController", "applicationDidBecomeActive"]
 - ["C13MathChallenge19FirstViewController", "applicationDidEnterBackground"]
@@ -139,7 +175,10 @@ depends-member:
 - ["C13MathChallenge19FirstViewController", "applicationWillTerminate"]
 - ["C13MathChallenge19FirstViewController", "deinit"]
 - ["C13MathChallenge19FirstViewController", "didReceiveMemoryWarning"]
+- ["C13MathChallenge19FirstViewController", "higeScorebtn"]
 - ["C13MathChallenge19FirstViewController", "init"]
+- !private ["C13MathChallenge19FirstViewController", "show"]
+- !private ["C13MathChallenge19FirstViewController", "storyboard"]
 - ["C13MathChallenge19FirstViewController", "viewDidLoad"]
 - ["C13MathChallenge19FirstViewController", "window"]
 - !private ["Ps8Hashable", "LocDbc"]
@@ -155,19 +194,26 @@ depends-member:
 - ["Ps8Hashable", "applicationWillEnterForeground"]
 - ["Ps8Hashable", "applicationWillResignActive"]
 - ["Ps8Hashable", "applicationWillTerminate"]
-- !private ["Ps8Hashable", "cleanDatabaseTables"]
 - !private ["Ps8Hashable", "databaseSetup"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
+- ["Ps8Hashable", "higeScorebtn"]
 - !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "instantiateViewController"]
+- !private ["Ps8Hashable", "pageTransfer"]
 - !private ["Ps8Hashable", "pullQuestionsFromDatabase"]
 - !private ["Ps8Hashable", "setHighScores"]
+- !private ["Ps8Hashable", "show"]
+- !private ["Ps8Hashable", "storyboard"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
-- !private ["C13MathChallenge20LocalDatabaseControl", "cleanDatabaseTables"]
+- ["SQ", "deinit"]
 - !private ["C13MathChallenge20LocalDatabaseControl", "databaseSetup"]
+- !private ["C13MathChallenge20LocalDatabaseControl", "pageTransfer"]
 - !private ["C13MathChallenge20LocalDatabaseControl", "pullQuestionsFromDatabase"]
 - !private ["C13MathChallenge20LocalDatabaseControl", "setHighScores"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "LocDbc"]
 - ["PSo8NSCoding", "application"]
@@ -183,10 +229,14 @@ depends-member:
 - ["PSo8NSCoding", "applicationWillResignActive"]
 - ["PSo8NSCoding", "applicationWillTerminate"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "higeScorebtn"]
 - !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "show"]
+- !private ["PSo8NSCoding", "storyboard"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "window"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "LocDbc"]
 - ["PSo26NSExtensionRequestHandling", "application"]
 - ["PSo26NSExtensionRequestHandling", "applicationDidBecomeActive"]
@@ -201,11 +251,17 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "applicationWillResignActive"]
 - ["PSo26NSExtensionRequestHandling", "applicationWillTerminate"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "higeScorebtn"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "show"]
+- !private ["PSo26NSExtensionRequestHandling", "storyboard"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "window"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "LocDbc"]
+- !private ["CSo8NSObject", "UIViewController"]
 - ["CSo8NSObject", "application"]
 - ["CSo8NSObject", "applicationDidBecomeActive"]
 - ["CSo8NSObject", "applicationDidEnterBackground"]
@@ -218,12 +274,16 @@ depends-member:
 - ["CSo8NSObject", "applicationWillEnterForeground"]
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
-- !private ["CSo8NSObject", "cleanDatabaseTables"]
 - !private ["CSo8NSObject", "databaseSetup"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "higeScorebtn"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "instantiateViewController"]
+- !private ["CSo8NSObject", "pageTransfer"]
 - !private ["CSo8NSObject", "pullQuestionsFromDatabase"]
 - !private ["CSo8NSObject", "setHighScores"]
+- !private ["CSo8NSObject", "show"]
+- !private ["CSo8NSObject", "storyboard"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "window"]
 - !private ["PSo16NSObjectProtocol", "LocDbc"]
@@ -239,16 +299,26 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillEnterForeground"]
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
-- !private ["PSo16NSObjectProtocol", "cleanDatabaseTables"]
 - !private ["PSo16NSObjectProtocol", "databaseSetup"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "higeScorebtn"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "instantiateViewController"]
+- !private ["PSo16NSObjectProtocol", "pageTransfer"]
 - !private ["PSo16NSObjectProtocol", "pullQuestionsFromDatabase"]
 - !private ["PSo16NSObjectProtocol", "setHighScores"]
+- !private ["PSo16NSObjectProtocol", "show"]
+- !private ["PSo16NSObjectProtocol", "storyboard"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo21UIAppearanceContainer", "LocDbc"]
 - ["PSo21UIAppearanceContainer", "application"]
 - ["PSo21UIAppearanceContainer", "applicationDidBecomeActive"]
@@ -263,7 +333,10 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "applicationWillResignActive"]
 - ["PSo21UIAppearanceContainer", "applicationWillTerminate"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "higeScorebtn"]
 - !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "show"]
+- !private ["PSo21UIAppearanceContainer", "storyboard"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "window"]
 - ["PSo21UIAppearanceContainer", ""]
@@ -280,6 +353,8 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillEnterForeground"]
 - ["PSo21UIApplicationDelegate", "applicationWillResignActive"]
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
+- !private ["PSo21UIApplicationDelegate", "show"]
+- !private ["PSo21UIApplicationDelegate", "storyboard"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
 - !private ["PSo18UIContentContainer", "LocDbc"]
@@ -296,7 +371,10 @@ depends-member:
 - ["PSo18UIContentContainer", "applicationWillResignActive"]
 - ["PSo18UIContentContainer", "applicationWillTerminate"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "higeScorebtn"]
 - !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "show"]
+- !private ["PSo18UIContentContainer", "storyboard"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "window"]
 - ["PSo18UIContentContainer", ""]
@@ -314,11 +392,16 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "applicationWillResignActive"]
 - ["PSo18UIFocusEnvironment", "applicationWillTerminate"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "higeScorebtn"]
 - !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "show"]
+- !private ["PSo18UIFocusEnvironment", "storyboard"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "window"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo11UIResponder", "AnyObject"]
 - !private ["CSo11UIResponder", "LocDbc"]
+- !private ["CSo11UIResponder", "UIViewController"]
 - ["CSo11UIResponder", "application"]
 - ["CSo11UIResponder", "applicationDidBecomeActive"]
 - ["CSo11UIResponder", "applicationDidEnterBackground"]
@@ -332,7 +415,10 @@ depends-member:
 - ["CSo11UIResponder", "applicationWillResignActive"]
 - ["CSo11UIResponder", "applicationWillTerminate"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "higeScorebtn"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "show"]
+- !private ["CSo11UIResponder", "storyboard"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "window"]
 - !private ["PSo30UIResponderStandardEditActions", "LocDbc"]
@@ -349,7 +435,10 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "applicationWillResignActive"]
 - ["PSo30UIResponderStandardEditActions", "applicationWillTerminate"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- ["PSo30UIResponderStandardEditActions", "higeScorebtn"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "show"]
+- !private ["PSo30UIResponderStandardEditActions", "storyboard"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "window"]
 - ["PSo30UIResponderStandardEditActions", ""]
@@ -367,10 +456,15 @@ depends-member:
 - ["PSo16UIStateRestoring", "applicationWillResignActive"]
 - ["PSo16UIStateRestoring", "applicationWillTerminate"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "higeScorebtn"]
 - !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "show"]
+- !private ["PSo16UIStateRestoring", "storyboard"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "window"]
 - ["PSo16UIStateRestoring", ""]
+- ["CSo12UIStoryboard", "deinit"]
+- !private ["CSo12UIStoryboard", "instantiateViewController"]
 - !private ["PSo18UITraitEnvironment", "LocDbc"]
 - ["PSo18UITraitEnvironment", "application"]
 - ["PSo18UITraitEnvironment", "applicationDidBecomeActive"]
@@ -385,11 +479,16 @@ depends-member:
 - ["PSo18UITraitEnvironment", "applicationWillResignActive"]
 - ["PSo18UITraitEnvironment", "applicationWillTerminate"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "higeScorebtn"]
 - !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "show"]
+- !private ["PSo18UITraitEnvironment", "storyboard"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "window"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo16UIViewController", "AnyObject"]
 - !private ["CSo16UIViewController", "LocDbc"]
+- !private ["CSo16UIViewController", "UIViewController"]
 - ["CSo16UIViewController", "application"]
 - ["CSo16UIViewController", "applicationDidBecomeActive"]
 - ["CSo16UIViewController", "applicationDidEnterBackground"]
@@ -404,10 +503,18 @@ depends-member:
 - ["CSo16UIViewController", "applicationWillTerminate"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "higeScorebtn"]
 - ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "show"]
+- !private ["CSo16UIViewController", "storyboard"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "window"]
 - ["CSo16UIViewController", ""]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "LocDbc"]
 - ["Ps9_Hashable", "application"]
 - ["Ps9_Hashable", "applicationDidBecomeActive"]
@@ -421,30 +528,54 @@ depends-member:
 - ["Ps9_Hashable", "applicationWillEnterForeground"]
 - ["Ps9_Hashable", "applicationWillResignActive"]
 - ["Ps9_Hashable", "applicationWillTerminate"]
-- !private ["Ps9_Hashable", "cleanDatabaseTables"]
 - !private ["Ps9_Hashable", "databaseSetup"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- ["Ps9_Hashable", "higeScorebtn"]
 - !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "instantiateViewController"]
+- !private ["Ps9_Hashable", "pageTransfer"]
 - !private ["Ps9_Hashable", "pullQuestionsFromDatabase"]
 - !private ["Ps9_Hashable", "setHighScores"]
+- !private ["Ps9_Hashable", "show"]
+- !private ["Ps9_Hashable", "storyboard"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", "window"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
+- !private "PSo13CKRecordValue"
+- !private "PSo15CNKeyDescriptor"
 - "Ps7CVarArg"
+- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "C13MathChallenge19FirstViewController"
 - "Ps8Hashable"
+- "SQ"
 - !private "C13MathChallenge20LocalDatabaseControl"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
 - "Sq"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
 - "PSo21UIAppearanceContainer"
 - "PSo21UIApplicationDelegate"
 - "PSo18UIContentContainer"
@@ -452,9 +583,16 @@ depends-nominal:
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
+- "CSo12UIStoryboard"
 - "PSo18UITraitEnvironment"
 - "CSo16UIViewController"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -478,4 +616,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CloudKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Contacts.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "9b9b2fd51a8ec740a7cf49105f212a9d"
+interface-hash: "8d4340f0ee36f183fdff6eee19977b53"

@@ -6,29 +6,41 @@ provides-nominal:
 provides-member:
 - ["C13MathChallenge14FinalHighScore", ""]
 provides-dynamic-lookup:
-- "viewWillAppear"
-- "highestScore"
 - "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "exitHighbtn"
+- "viewWillAppear"
+- "highestScore"
 depends-top-level:
-- "FinalHighScore"
-- "Bool"
-- !private "LocDbc"
+- "CastingPrecedence"
+- !private "=="
 - "AssignmentPrecedence"
+- !private "LocDbc"
+- !private "AnyObject"
+- "Bool"
 - "UILabel"
+- "FinalHighScore"
 - "UIViewController"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "LocDbc"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- ["Ps9AnyObject", "exitHighbtn"]
 - !private ["Ps9AnyObject", "highScore"]
 - ["Ps9AnyObject", "highestScore"]
 - !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "instantiateViewController"]
+- !private ["Ps9AnyObject", "pageTransfer"]
+- !private ["Ps9AnyObject", "show"]
+- !private ["Ps9AnyObject", "storyboard"]
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewWillAppear"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Index"]
+- !private ["Sa", "IndexDistance"]
 - !private ["Sa", "SubSequence"]
+- !private ["Sa", "count"]
 - !private ["Sa", "subscript"]
 - !private ["Ps23BidirectionalCollection", "Index"]
 - !private ["Ps23BidirectionalCollection", "IndexDistance"]
@@ -36,6 +48,7 @@ depends-member:
 - !private ["Ps23BidirectionalCollection", "Iterator"]
 - !private ["Ps23BidirectionalCollection", "SubSequence"]
 - !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps23BidirectionalCollection", "count"]
 - !private ["Ps23BidirectionalCollection", "subscript"]
 - !private ["Ps22BidirectionalIndexable", "Index"]
 - !private ["Ps22BidirectionalIndexable", "IndexDistance"]
@@ -43,6 +56,7 @@ depends-member:
 - !private ["Ps22BidirectionalIndexable", "Iterator"]
 - !private ["Ps22BidirectionalIndexable", "SubSequence"]
 - !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "count"]
 - !private ["Ps22BidirectionalIndexable", "subscript"]
 - !private ["Vs18BidirectionalSlice", "Index"]
 - !private ["Vs18BidirectionalSlice", "IndexDistance"]
@@ -53,17 +67,28 @@ depends-member:
 - !private ["Ps17BitwiseOperations", "IntegerLiteralType"]
 - !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "text"]
+- !private ["PSo13CKRecordValue", "init"]
+- !private ["PSo15CNKeyDescriptor", "init"]
 - !private ["Ps7CVarArg", "Index"]
+- !private ["Ps7CVarArg", "IndexDistance"]
 - !private ["Ps7CVarArg", "IntegerLiteralType"]
 - !private ["Ps7CVarArg", "LocDbc"]
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
+- !private ["Ps7CVarArg", "count"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- ["Ps7CVarArg", "exitHighbtn"]
 - !private ["Ps7CVarArg", "highScore"]
 - ["Ps7CVarArg", "highestScore"]
 - !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "instantiateViewController"]
+- !private ["Ps7CVarArg", "pageTransfer"]
+- !private ["Ps7CVarArg", "show"]
+- !private ["Ps7CVarArg", "storyboard"]
 - !private ["Ps7CVarArg", "subscript"]
 - !private ["Ps7CVarArg", "text"]
 - ["Ps7CVarArg", "viewDidLoad"]
@@ -75,17 +100,26 @@ depends-member:
 - !private ["Ps10Collection", "Iterator"]
 - !private ["Ps10Collection", "SubSequence"]
 - !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "count"]
 - !private ["Ps10Collection", "subscript"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "Stride"]
 - !private ["Ps10Comparable", "_DisabledRangeIndex"]
+- !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
 - !private ["Ps28CustomDebugStringConvertible", "LocDbc"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "exitHighbtn"]
 - !private ["Ps28CustomDebugStringConvertible", "highScore"]
 - ["Ps28CustomDebugStringConvertible", "highestScore"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "pageTransfer"]
+- !private ["Ps28CustomDebugStringConvertible", "show"]
+- !private ["Ps28CustomDebugStringConvertible", "storyboard"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
@@ -94,22 +128,36 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "Index"]
+- !private ["Ps17CustomReflectable", "IndexDistance"]
 - !private ["Ps17CustomReflectable", "IntegerLiteralType"]
 - !private ["Ps17CustomReflectable", "Stride"]
 - !private ["Ps17CustomReflectable", "SubSequence"]
 - !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "count"]
+- !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IndexDistance"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "LocDbc"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "count"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "exitHighbtn"]
 - !private ["Ps23CustomStringConvertible", "highScore"]
 - ["Ps23CustomStringConvertible", "highestScore"]
 - !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "instantiateViewController"]
+- !private ["Ps23CustomStringConvertible", "pageTransfer"]
+- !private ["Ps23CustomStringConvertible", "show"]
+- !private ["Ps23CustomStringConvertible", "storyboard"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
@@ -129,37 +177,61 @@ depends-member:
 - !private ["Ps9Equatable", "LocDbc"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
+- ["Ps9Equatable", "exitHighbtn"]
 - !private ["Ps9Equatable", "highScore"]
 - ["Ps9Equatable", "highestScore"]
 - !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "instantiateViewController"]
+- !private ["Ps9Equatable", "pageTransfer"]
+- !private ["Ps9Equatable", "show"]
+- !private ["Ps9Equatable", "storyboard"]
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewWillAppear"]
 - ["Ps9Equatable", ""]
 - !private ["Ps25ExpressibleByArrayLiteral", "Index"]
+- !private ["Ps25ExpressibleByArrayLiteral", "IndexDistance"]
 - !private ["Ps25ExpressibleByArrayLiteral", "SubSequence"]
+- !private ["Ps25ExpressibleByArrayLiteral", "count"]
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["C13MathChallenge14FinalHighScore", "AnyObject"]
 - ["C13MathChallenge14FinalHighScore", "Bool"]
 - !private ["C13MathChallenge14FinalHighScore", "LocDbc"]
 - ["C13MathChallenge14FinalHighScore", "UILabel"]
+- !private ["C13MathChallenge14FinalHighScore", "UIViewController"]
 - ["C13MathChallenge14FinalHighScore", "deinit"]
 - ["C13MathChallenge14FinalHighScore", "didReceiveMemoryWarning"]
+- ["C13MathChallenge14FinalHighScore", "exitHighbtn"]
 - ["C13MathChallenge14FinalHighScore", "highestScore"]
 - ["C13MathChallenge14FinalHighScore", "init"]
+- !private ["C13MathChallenge14FinalHighScore", "show"]
+- !private ["C13MathChallenge14FinalHighScore", "storyboard"]
 - ["C13MathChallenge14FinalHighScore", "viewDidLoad"]
 - ["C13MathChallenge14FinalHighScore", "viewWillAppear"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "LocDbc"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
+- ["Ps8Hashable", "exitHighbtn"]
 - !private ["Ps8Hashable", "highScore"]
 - ["Ps8Hashable", "highestScore"]
 - !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "instantiateViewController"]
+- !private ["Ps8Hashable", "pageTransfer"]
+- !private ["Ps8Hashable", "show"]
+- !private ["Ps8Hashable", "storyboard"]
 - !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewWillAppear"]
@@ -171,6 +243,7 @@ depends-member:
 - !private ["Ps9Indexable", "Iterator"]
 - !private ["Ps9Indexable", "SubSequence"]
 - !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "count"]
 - !private ["Ps9Indexable", "subscript"]
 - !private ["Ps13IndexableBase", "Index"]
 - !private ["Ps13IndexableBase", "IndexDistance"]
@@ -178,6 +251,7 @@ depends-member:
 - !private ["Ps13IndexableBase", "Iterator"]
 - !private ["Ps13IndexableBase", "SubSequence"]
 - !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "count"]
 - !private ["Ps13IndexableBase", "subscript"]
 - !private ["Vs16IndexingIterator", "Element"]
 - !private ["Si", "IntegerLiteralType"]
@@ -192,50 +266,80 @@ depends-member:
 - !private ["Ps17IntegerArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps16IteratorProtocol", "Element"]
 - !private ["C13MathChallenge20LocalDatabaseControl", "highScore"]
+- !private ["C13MathChallenge20LocalDatabaseControl", "pageTransfer"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "IntegerLiteralType"]
 - !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
+- !private ["Ps10MirrorPath", "init"]
 - !private ["Ps17MutableCollection", "Index"]
+- !private ["Ps17MutableCollection", "IndexDistance"]
 - !private ["Ps17MutableCollection", "SubSequence"]
+- !private ["Ps17MutableCollection", "count"]
 - !private ["Ps17MutableCollection", "subscript"]
 - !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "IndexDistance"]
 - !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "count"]
 - !private ["Ps16MutableIndexable", "subscript"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "LocDbc"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "exitHighbtn"]
 - ["PSo8NSCoding", "highestScore"]
 - !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "show"]
+- !private ["PSo8NSCoding", "storyboard"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "LocDbc"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "exitHighbtn"]
 - ["PSo26NSExtensionRequestHandling", "highestScore"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "show"]
+- !private ["PSo26NSExtensionRequestHandling", "storyboard"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "LocDbc"]
 - ["CSo8NSObject", "UILabel"]
+- !private ["CSo8NSObject", "UIViewController"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "exitHighbtn"]
 - !private ["CSo8NSObject", "highScore"]
 - ["CSo8NSObject", "highestScore"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "instantiateViewController"]
+- !private ["CSo8NSObject", "pageTransfer"]
+- !private ["CSo8NSObject", "show"]
+- !private ["CSo8NSObject", "storyboard"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewWillAppear"]
 - !private ["PSo16NSObjectProtocol", "LocDbc"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "exitHighbtn"]
 - !private ["PSo16NSObjectProtocol", "highScore"]
 - ["PSo16NSObjectProtocol", "highestScore"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "instantiateViewController"]
+- !private ["PSo16NSObjectProtocol", "pageTransfer"]
+- !private ["PSo16NSObjectProtocol", "show"]
+- !private ["PSo16NSObjectProtocol", "storyboard"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
 - !private ["Ps22RandomAccessCollection", "Index"]
 - !private ["Ps22RandomAccessCollection", "IndexDistance"]
@@ -243,6 +347,7 @@ depends-member:
 - !private ["Ps22RandomAccessCollection", "Iterator"]
 - !private ["Ps22RandomAccessCollection", "SubSequence"]
 - !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps22RandomAccessCollection", "count"]
 - !private ["Ps22RandomAccessCollection", "subscript"]
 - !private ["Ps21RandomAccessIndexable", "Index"]
 - !private ["Ps21RandomAccessIndexable", "IndexDistance"]
@@ -250,6 +355,7 @@ depends-member:
 - !private ["Ps21RandomAccessIndexable", "Iterator"]
 - !private ["Ps21RandomAccessIndexable", "SubSequence"]
 - !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "count"]
 - !private ["Ps21RandomAccessIndexable", "subscript"]
 - !private ["Vs17RandomAccessSlice", "Index"]
 - !private ["Vs17RandomAccessSlice", "IndexDistance"]
@@ -258,10 +364,14 @@ depends-member:
 - !private ["Vs17RandomAccessSlice", "SubSequence"]
 - !private ["Vs17RandomAccessSlice", "_Element"]
 - !private ["Ps26RangeReplaceableCollection", "Index"]
+- !private ["Ps26RangeReplaceableCollection", "IndexDistance"]
 - !private ["Ps26RangeReplaceableCollection", "SubSequence"]
+- !private ["Ps26RangeReplaceableCollection", "count"]
 - !private ["Ps26RangeReplaceableCollection", "subscript"]
 - !private ["Ps25RangeReplaceableIndexable", "Index"]
+- !private ["Ps25RangeReplaceableIndexable", "IndexDistance"]
 - !private ["Ps25RangeReplaceableIndexable", "SubSequence"]
+- !private ["Ps25RangeReplaceableIndexable", "count"]
 - !private ["Ps25RangeReplaceableIndexable", "subscript"]
 - !private ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Index"]
@@ -270,6 +380,7 @@ depends-member:
 - !private ["Ps8Sequence", "Iterator"]
 - !private ["Ps8Sequence", "SubSequence"]
 - !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "count"]
 - !private ["Ps8Sequence", "subscript"]
 - !private ["Ps13SignedInteger", "IntegerLiteralType"]
 - !private ["Ps13SignedInteger", "Stride"]
@@ -284,20 +395,30 @@ depends-member:
 - !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["Ps10Strideable", "Stride"]
 - !private ["Ps10Strideable", "_DisabledRangeIndex"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "LocDbc"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "exitHighbtn"]
 - ["PSo21UIAppearanceContainer", "highestScore"]
 - !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "show"]
+- !private ["PSo21UIAppearanceContainer", "storyboard"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["PSo18UIContentContainer", "LocDbc"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "exitHighbtn"]
 - ["PSo18UIContentContainer", "highestScore"]
 - !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "show"]
+- !private ["PSo18UIContentContainer", "storyboard"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", ""]
@@ -306,75 +427,115 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "LocDbc"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "exitHighbtn"]
 - ["PSo18UIFocusEnvironment", "highestScore"]
 - !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "show"]
+- !private ["PSo18UIFocusEnvironment", "storyboard"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["CSo7UILabel", "text"]
+- !private ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "LocDbc"]
 - ["CSo11UIResponder", "UILabel"]
+- !private ["CSo11UIResponder", "UIViewController"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "exitHighbtn"]
 - ["CSo11UIResponder", "highestScore"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "show"]
+- !private ["CSo11UIResponder", "storyboard"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewWillAppear"]
 - !private ["PSo30UIResponderStandardEditActions", "LocDbc"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- ["PSo30UIResponderStandardEditActions", "exitHighbtn"]
 - ["PSo30UIResponderStandardEditActions", "highestScore"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "show"]
+- !private ["PSo30UIResponderStandardEditActions", "storyboard"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "viewWillAppear"]
 - ["PSo30UIResponderStandardEditActions", ""]
 - !private ["PSo16UIStateRestoring", "LocDbc"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "exitHighbtn"]
 - ["PSo16UIStateRestoring", "highestScore"]
 - !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "show"]
+- !private ["PSo16UIStateRestoring", "storyboard"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", ""]
+- ["CSo12UIStoryboard", "deinit"]
+- !private ["CSo12UIStoryboard", "instantiateViewController"]
 - !private ["PSo18UITraitEnvironment", "LocDbc"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "exitHighbtn"]
 - ["PSo18UITraitEnvironment", "highestScore"]
 - !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "show"]
+- !private ["PSo18UITraitEnvironment", "storyboard"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "text"]
+- !private ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "LocDbc"]
 - ["CSo16UIViewController", "UILabel"]
+- !private ["CSo16UIViewController", "UIViewController"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "exitHighbtn"]
 - ["CSo16UIViewController", "highestScore"]
 - ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "show"]
+- !private ["CSo16UIViewController", "storyboard"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", ""]
 - !private ["Ps14_ArrayProtocol", "Index"]
+- !private ["Ps14_ArrayProtocol", "IndexDistance"]
 - !private ["Ps14_ArrayProtocol", "SubSequence"]
+- !private ["Ps14_ArrayProtocol", "count"]
 - !private ["Ps14_ArrayProtocol", "subscript"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "IndexDistance"]
 - !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisabledRangeIndex"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
 - !private ["Ps9_Hashable", "LocDbc"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- ["Ps9_Hashable", "exitHighbtn"]
 - !private ["Ps9_Hashable", "highScore"]
 - ["Ps9_Hashable", "highestScore"]
 - !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "instantiateViewController"]
+- !private ["Ps9_Hashable", "pageTransfer"]
+- !private ["Ps9_Hashable", "show"]
+- !private ["Ps9_Hashable", "storyboard"]
 - !private ["Ps9_Hashable", "text"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", "viewWillAppear"]
@@ -389,10 +550,14 @@ depends-member:
 - !private ["Ps18_IntegerArithmetic", "Stride"]
 - !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - !private ["Ps21_ObjectiveCBridgeable", "Stride"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
 - !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps14_SignedInteger", "IntegerLiteralType"]
 - !private ["Ps14_SignedInteger", "Stride"]
@@ -408,7 +573,10 @@ depends-nominal:
 - !private "Ps22BidirectionalIndexable"
 - !private "Vs18BidirectionalSlice"
 - !private "Ps17BitwiseOperations"
+- "Sb"
 - !private "PSo15CALayerDelegate"
+- !private "PSo13CKRecordValue"
+- !private "PSo15CNKeyDescriptor"
 - "Ps7CVarArg"
 - !private "Ps10Collection"
 - !private "Ps10Comparable"
@@ -420,7 +588,12 @@ depends-nominal:
 - !private "Vs26DefaultRandomAccessIndices"
 - "Ps9Equatable"
 - !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "C13MathChallenge14FinalHighScore"
 - "Ps8Hashable"
 - "SQ"
@@ -432,14 +605,19 @@ depends-nominal:
 - !private "Ps17IntegerArithmetic"
 - !private "Ps16IteratorProtocol"
 - !private "C13MathChallenge20LocalDatabaseControl"
+- !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
 - !private "Ps16MutableIndexable"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
 - "Sq"
 - !private "Ps22RandomAccessCollection"
 - !private "Ps21RandomAccessIndexable"
@@ -451,6 +629,9 @@ depends-nominal:
 - !private "Ps12SignedNumber"
 - !private "Vs5Slice"
 - !private "Ps10Strideable"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -464,13 +645,20 @@ depends-nominal:
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
+- "CSo12UIStoryboard"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - !private "Ps14_ArrayProtocol"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps14_Incrementable"
 - !private "Ps8_Integer"
@@ -502,4 +690,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CloudKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Contacts.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "bf12780c2c8174fd6dbd84722cbdd155"
+interface-hash: "359c4dd226bd0de425bc517acdc68e1b"

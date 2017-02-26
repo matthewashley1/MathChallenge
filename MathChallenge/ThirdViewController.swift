@@ -29,9 +29,13 @@ class ThirdViewController: UIViewController {
         
     }
 
-   
-
-
-
+    @IBAction func highScorebtn(_ sender: Any) {
+        
+        LocDbc.pageTransfer = "Last"
+        
+        let vc: AnyObject! = self.storyboard?.instantiateViewController(withIdentifier: "High Score")
+        self.show(vc as! UIViewController, sender: vc)
+        
+    }
 
 }
